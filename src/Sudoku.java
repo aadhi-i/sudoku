@@ -16,7 +16,7 @@ public class Sudoku extends JFrame {
     private int[][] solution = new int[9][9];
     private long startTime;
     private Timer timer;
-    private JLabel timerLabel;
+    private JLabel timerLabel; 
 
     public Sudoku() {
         setTitle("Sudoku Game");
@@ -152,6 +152,7 @@ public class Sudoku extends JFrame {
         }
     }
 
+    //random puzzle
     private int[][] generateRandomPuzzle() {
         int[][] fullGrid = new int[9][9];
         generateFullGrid(fullGrid);
